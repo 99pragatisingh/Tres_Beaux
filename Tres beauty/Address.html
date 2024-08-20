@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+body {
+  font-family: Arial, sans-serif;
+  background-color: #d698cd;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+
+.container {
+  background-color: #fff;
+  padding: 30px;
+  border-radius: 5px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+label {
+  display: block;
+  margin-bottom: 5px;
+  font-weight: bold;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="tel"],
+textarea {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 15px;
+  border: 1px solid #ccc;
+  border-radius: 3px;
+  box-sizing: border-box;
+}
+
+button {
+  background-color: #4CAF50;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 3px;
+  cursor: pointer;
+  display: block;
+  width: 100%;
+  font-size: 16px;
+}
+
+button:hover {
+  background-color: #45a049;
+}
+
+.form-row {
+  display: flex;
+  gap: 15px;
+}
+
+.form-row > div {
+  flex: 1;
+}
+</style>
+</head>
+<body>
+<div class="container">
+  <h1>Address form</h1>
+  <form>
+    <label for="first_name">First name</label>
+    <input type="text" id="first_name" name="first_name" placeholder="First name">
+
+    <label for="last_name">Last name</label>
+    <input type="text" id="last_name" name="last_name" placeholder="Last name">
+
+    <label for="street_name">Street name</label>
+    <input type="text" id="street_name" name="street_name" placeholder="Street name">
+
+    <div class="form-row">
+      <div>
+        <label for="number">Number</label>
+        <input type="text" id="number" name="number" placeholder="Number">
+      </div>
+      <div>
+        <label for="floor_unit">Floor, unit,...</label>
+        <input type="text" id="floor_unit" name="floor_unit" placeholder="Floor, unit,...">
+      </div>
+    </div>
+
+    <div class="form-row">
+      <div>
+        <label for="postal_code">Postal code</label>
+        <input type="text" id="postal_code" name="postal_code" placeholder="Postal code">
+      </div>
+      <div>
+        <label for="city">City</label>
+        <input type="text" id="city" name="city" placeholder="City">
+      </div>
+    </div>
+
+    <div class="form-row">
+      <div>
+        <label for="state">State</label>
+        <input type="text" id="state" name="state" placeholder="State">
+      </div>
+      <div>
+        <label for="country">Country</label>
+        <input type="text" id="country" name="country" placeholder="Country">
+      </div>
+    </div>
+    
+    <button type="submit">Submit →</button>
+  </form>
+</div>
+</body>
+</html>
